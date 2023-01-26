@@ -17,12 +17,6 @@ body
     font-weight:bolder;
 }
 
-#about_us
-{
-    font-weight: lighter;
-    font-size: 30px;
-    text-decoration: underline;
-}
 
 
 #left
@@ -124,6 +118,15 @@ margin-right: 2vw;
     font-weight: bold;
     margin-bottom: 10%;
 }
+
+#about_us
+{
+    font-weight: lighter;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+
 #about_us_body
 {
     position: relative;
