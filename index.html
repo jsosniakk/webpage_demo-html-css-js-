@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+    <title>_meet METAMASK</title>
+  </head>
+  <body>
+
+    <script>
+        document.querySelector('body').addEventListener('mousemove', eyeball);
+        function eyeball()
+        {
+            var eye = document.querySelectorAll('.eye');
+            eye.forEach(function(eye)
+            {
+                let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
+                let y= (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
+                let radian = Math.atan2(event.pageX - x, event.pageY - y);
+                let rot = (radian * (180/Math.PI) * -1) +270;
+                eye.style.transform = "rotate(" + rot +"deg)";
+            })
+        }
+
+    </script>
+
+    <div id="header">
+        <h1 id="title">_meet METAMASK </h1>
+    </div>
+
+    <div class="img_container">
+
+        <div id="left">
+            <p>At Metamask, we're a global community of
+    
+                <ul id="b1">
+                    <li>technologists</li>
+                    <li>thinkers</li>
+                    <li>builders</li>
+                </ul>
+            </p>
+        
+        </div>
+       
+        <div id="right">
+            <p> The most important thing for us are: 
+                <ul id="b1">
+                    <li>diligence</li>
+                    <li>creativity</li>
+                    <li>willingness to improve </li>
+                </ul>
+            </p>
+        </div>
+    
+        <div class="face">
+            <img class="img" src="img/MetaMask_Fox.png" alt="FOX"/>
+            <div class="eyes">
+                <div class="eye"></div>
+                <div class="eye"></div>
+            </div>
+        </div>
+
+    </div>
+   
+
+
+    <div id="meta_link" >
+        <a id="meta_word" href="https://metamask.io/">GO TO METAMASK.IO</a>
+    </div>
+
+    <div >
+        <p id="about_us">About Us:</p>
+        <p id="about_us_body">
+            MetaMask is a browser extension and mobile wallet for
+            Ethereum that allows users to securely store, manage, and
+            use their Ethereum-based assets, including ERC-20 tokens and
+            non-fungible tokens (NFTs). It is user-friendly, easy to
+            use, and allows access to the decentralized web. MetaMask
+            also uses seed phrases to generate unique private keys for
+            users, ensuring the security of assets. It can also connect
+            to different Ethereum networks, including the mainnet and
+            testnets. MetaMask is an open-source project, continuously
+            being developed and updated by a team of experienced
+            developers and security experts.
+        </p>
+    </div>
+
+    <div id="footer">
+        Jakub Sosniak &copy; All Rights Reserved
+    </div>
+
+  </body>
+</html>
